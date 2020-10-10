@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OakhacksApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="body">
+    <div class="bg-black">
+  <nav class="navbar navbar sticky-top navbar-expand-lg" style="padding-top: 1vw; padding-left: 2vw; padding-right: 2vw">
+      <a class="navbar-brand" href="/" style="font-family: lemon-milk; font-size: 25px;"  href="#">
+          <img src="/assets/watercan.svg" style="width: 25%">
+          <p style=" font-family: lemon-milk; color: white; display: inline-block; font-size:1.5vw; padding:0; margin:0;">Mentree</p>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <style>
+          .nav-link.active {
+              color: rgb(86,176,154) !important;
+              border-bottom: 3px solid rgb(86,176,154);
+          }
+      </style>
+
+          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a href="/" class="nav-link header navbar-text">Home</a>
+                   </li>
+                   <li class="nav-item">
+                      <a href="/stem" class="nav-link header navbar-text">Stem Subjects</a>
+                   </li>
+                   <li class="nav-item">
+                      <a href="#" class="nav-link header navbar-text">Our Mission</a>
+                   </li>
+                   <li class="nav-item">
+                      <a href="{% url 'index' %}" class="nav-link header navbar-text">Contact Us</a>
+                   </li>
+              </ul>
+              <button onclick="location.href = '{% url 'login' %}';" class="btn btn-green btn-sml" style="margin-right: 15px">Sign Up</button>
+              <button onclick="location.href = '{% url 'login' %}';" class="btn btn-green btn-sml" >Sign In</button>
+        </div>
+    </nav>
+  </div>
+
+    <%= yield %>
+  </body>
+
+
+</html>

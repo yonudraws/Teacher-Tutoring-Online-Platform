@@ -1,0 +1,483 @@
+
+/* --- Website Colors --- */
+:root {
+	--black: #1f1f1f;
+	--green: #56b09a;
+	--white: #ffffff;
+	--grey: #2c2c2c;
+	--light-grey: #858585;
+}
+
+
+/* --- Background CSS --- */
+/* Background Gradients */
+html {
+	background-color: var(--green); /* For browsers that do not support gradients */
+	background-image: linear-gradient(115deg, rgba(12,171,102,1) 0%, rgba(24,199,174,1) 59%, rgba(46,199,236,1) 100%); /* Standard syntax (must be last) */
+}
+
+body {
+	background-color: var(--green); /* For browsers that do not support gradients */
+	background-image: linear-gradient(115deg, rgba(12,171,102,1) 0%, rgba(24,199,174,1) 59%, rgba(46,199,236,1) 100%); /* Standard syntax (must be last) */
+}
+
+/* Background Colours */
+*.bg-white {
+	background-color: var(--white);
+}
+
+*.bg-black {
+	background-color: var(--black);
+}
+
+*.bg-green {
+	background-color: var(--green);
+}
+
+
+/* --- Text CSS --- */
+/* Text Color */
+*.txt-white {
+	color: var(--white);
+}
+
+*.txt-white:hover {
+	color: var(--white);
+}
+
+*.txt-black {
+	color: var(--black);
+}
+
+*.txt-black:hover {
+	color: var(--black);
+}
+
+*.txt-green {
+	color: var(--green);
+}
+
+*.txt-green:hover {
+	color: var(--green);
+}
+
+*.txt-light-grey {
+	color: var(--light-grey);
+}
+
+*.txt-light-grey:hover {
+	color: var(--light-grey);
+}
+
+a:hover {
+	color: var(--green);
+}
+
+/* Text Size */
+h1.page-title {
+	font-size: 7.5vw;
+}
+
+h2 {
+	font-size: 3vw;
+}
+
+h3 {
+	font-size: 2.25vw;
+}
+
+h4 {
+	font-size: 1.75vw;
+}
+
+h5 {
+	font-size: 1.5vw;
+}
+
+/* Text Families */
+@font-face {
+	font-family: lemon-milk;
+	src: url("/assets/LEMONMILK-Regular.otf");
+}
+
+@font-face {
+	font-family: mukta-mahee;
+	src: url("/assets/MuktaMahee-Regular.ttf");
+}
+
+
+/* Text Font */
+* {
+	font-family: mukta-mahee;
+}
+
+*.header {
+	font-family: lemon-milk;
+}
+
+
+/* --- Button CSS --- */
+button.btn {
+	background-color: var(--black);
+	border-radius: 1.5rem;
+	color: var(--green);
+	font-family: lemon-milk;
+}
+
+button.btn-black {
+	background-color: var(--black);
+	border-radius: 1.5rem;
+	color: var(--green);
+	font-family: lemon-milk;
+}
+
+button.btn-white {
+	background-color: var(--white);
+	border-radius: 1.5rem;
+	color: var(--green);
+	font-family: lemon-milk;
+}
+
+button.btn-green {
+	background-color: var(--green);
+	border-radius: 1.5rem;
+	color: var(--black);
+	font-family: lemon-milk;
+}
+
+button.btn-dynamic {
+	font-size: 1.1vw;
+}
+
+
+/* --- Image CSS -- */
+img {
+	max-width: 100%;
+}
+
+/* Round Image */
+img.round {
+	border-radius: 100%;
+}
+
+
+/* --- Spacing CSS --- */
+/* Background Section */
+div.screen-section {
+	height: 55vw;
+	width: 100%;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.screen-sectionv2 {
+	height: auto;
+	width: 100%;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 10vh;
+}
+
+div.screen-sectionheader {
+	height: auto;
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	background-color: var(--black);
+	position: fixed;
+}
+
+
+div.square {
+	width: 100%;
+	padding-top: 100%; /* 1:1 Aspect Ratio */
+	position: relative;
+}
+
+div.rounded-square {
+	width: 100%;
+	padding-top: 100%; /* 1:1 Aspect Ratio */
+	position: relative;
+
+	border-radius: 20%;
+}
+
+*.in-square {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+/* Section Sizes */
+div.section-lrg {
+	margin-top: 4vw;
+	margin-bottom: 4vw;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	width: 100%;
+}
+
+div.section-lrgnomarg {
+	margin-top:0vw;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	width: 100%;
+}
+
+div.section-pttop {
+	width: 100%;
+	height: 25vh;
+}
+
+div.section-med {
+	margin-top: 2.5vw;
+	margin-bottom: 2.5vw;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	width: 100%;
+}
+
+div.section-sml {
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	width: 100%;
+}
+
+div.section-other {
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	width: 100%;
+}
+
+div.bubble {
+	background-color: #2b2b2b;
+	border-radius: 15px;
+	margin: 25px 0px;
+	padding: 30px;
+}
+
+/* Positioning */
+*.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.centerv2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+*.bottom {
+	position: absolute;
+	bottom: 0;
+}
+
+/* Padding */
+*.no-padding {
+	padding: 0;
+}
+
+
+/* --- Button CSS --- */
+button.btn-sml {
+	font-size: 16px;
+	border-radius: 2vw;
+}
+
+button.btn-med {
+	font-size: 20px;
+	border-radius: 2vw;
+}
+
+button.btn-lrg {
+	font-size: 35px;
+	border-radius: 3.5vw;
+}
+
+button.btn-black {
+	background-color: var(--black);
+	color: var(--white);
+	font-family: lemon-milk;
+}
+
+button.btn-green {
+	background-color: var(--green);
+	color: var(--white);
+	font-family: lemon-milk;
+}
+
+
+/* --- Navbar CSS --- */
+.navbar-nav > .nav-item{
+    margin-right: 15px;
+}
+
+.navbar {
+	background: rgba(31,31,31, 0.5)
+}
+
+*.navbar-text {
+	color: var(--white);
+}
+
+/* ----- SECTION CSS ----- */
+/* --- User List CSS --- */
+div.user-divider {
+	border-top: 2px solid white;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+*.user-item {
+	margin: 0px;
+}
+
+/* --- Announcement List CSS --- */
+div.announcement-section {
+	border-top: 2px solid var(--light-grey);
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+}
+
+div.announcement-section:first-child {
+	border-top: 0px solid;
+}
+
+div.announcement-content {
+	margin-left: 7%;
+	border-left: 3px solid var(--green);
+	padding-left: 4%;
+}
+
+
+/* --- Gerald's stuff --- */
+*.bg-grad1 {
+	background-color: var(--green); /* For browsers that do not support gradients */
+	background-image: linear-gradient(115deg, rgba(12,171,102,1) 0%, rgba(24,199,174,1) 59%, rgba(46,199,236,1) 100%); /* Standard syntax (must be last) */
+	color: var(--black);
+	font-family: lemon-milk;
+	background-attachment:fixed;
+	text-align:center;
+	border: none;	
+	font-size:1.2em;
+}
+
+*.bg-grad2 {
+	background-color: var(--grey);
+	color: var(--white);
+	background-attachment:fixed;
+}
+
+.gradient-text{
+	background-color:var(--green);
+    background-image: linear-gradient(115deg, rgba(12,171,102,1) 0%, rgba(24,199,174,1) 59%, rgba(46,199,236,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.tall {
+	height: 27vh;
+}
+
+.back1 {
+	background: url('/static/main/images/site-index/notebook.png');
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	background-position: center;
+}
+
+.back2 {
+	background: url('/static/main/images/site-index/teacher.png');
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	background-position: center;
+}
+
+.back3 {
+	background: url('/static/main/images/site-index/why.jpg');
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center;
+}
+
+.back4 {
+	background: url('/static/main/images/site-index/downpatternv2.svg');
+	background-repeat: no-repeat !important;
+	background-size: cover; !important;
+	background-position: center;
+}
+
+.back5 {
+	background: url('/static/main/images/site-index/announcement.png');
+	background-repeat: no-repeat !important;
+	background-size: contain; !importsant;
+	background-position: right;
+}
+
+.statuspage {
+	background: url('/static/main/images/site-index/4041.svg');
+	background-repeat: no-repeat !important;
+	background-size: contain; !important;
+	background-position: right top;
+}
+
+*.user-text {
+	color: var(--white);
+	font-family: lemon-milk; 
+	font-size: 0.7vw;
+}
+
+div.section-pttop {
+	width: 100%;
+	height: 25vh;
+}
+
+div.section-ptbottom {
+	width: 100%;
+	height: 25vh;
+}
+
+div.section-cst {
+	margin-top: 4vw;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
+	width: 100%;
+	height: 21.0834553vw;
+}
+
+.square {
+	border-radius:.25rem!important
+	background-color: var(--black);
+}
+
+.rounder {
+	border-radius: 50px;
+	background-color:var(--green);
+	background-image: linear-gradient(115deg, rgba(12,171,102,1) 0%, rgba(24,199,174,1) 59%, rgba(46,199,236,1) 100%);
+	width: 25vw;
+	height: 25vw;
+}
+
+.backer1 {
+	background: url('/assets/relativity.svg');
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	background-position: center;
+}
